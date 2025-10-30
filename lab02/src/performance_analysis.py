@@ -10,6 +10,7 @@ def measure_insert_start_list(n: int) -> float:
     test_code = "for _ in range(len(arr)): arr.pop(0)"
     return timeit.timeit(stmt=test_code, setup=setup_code, number=1)
 
+
 def measure_insert_start_linkedlist(n: int) -> float:
     """Измерение времени вставки n элементов в начало связного списка (LinkedList).
     Каждая операция insert_at_start() имеет сложность O(1).
@@ -17,6 +18,7 @@ def measure_insert_start_linkedlist(n: int) -> float:
     setup_code = "from linked_list import LinkedList\nll = LinkedList()"
     test_code = f"for i in range({n}): ll.insert_at_start(i)"
     return timeit.timeit(stmt=test_code, setup=setup_code, number=1)
+
 
 def measure_queue_list(n: int) -> float:
     """Имитация очереди на list.
@@ -26,6 +28,7 @@ def measure_queue_list(n: int) -> float:
     test_code = "for _ in range(len(arr)): arr.pop(0)"
     return timeit.timeit(stmt=test_code, setup=setup_code, number=1)
 
+
 def measure_queue_deque(n: int) -> float:
     """Имитация очереди на deque.
     Операции popleft() выполняются за O(1).
@@ -33,6 +36,7 @@ def measure_queue_deque(n: int) -> float:
     setup_code = f"from collections import deque\nq = deque(range({n}))"
     test_code = "for _ in range(len(q)): q.popleft()"
     return timeit.timeit(stmt=test_code, setup=setup_code, number=1)
+
 
 def run_experiments():
     """Запуск всех тестов и построение графиков."""
