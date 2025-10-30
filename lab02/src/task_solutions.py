@@ -43,7 +43,7 @@ def is_palindrome(s: str) -> bool:
     чтобы эффективно сравнивать с обоих концов.
     Сложность: O(n) по времени, O(n) по памяти.
     """
-    d = deque([char.lower() for char in s])
+    d = deque([char.lower() for char in s if char.isalnum()])
 
     while len(d) > 1:
         if d.popleft() != d.pop():

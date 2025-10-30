@@ -2,6 +2,15 @@ import timeit
 import matplotlib.pyplot as plt
 
 
+pc_info = """
+Характеристики ПК для тестирования:
+- Процессор: 4 ядра
+- Оперативная память: 16 ГБ
+- ОС: Linux Mint
+- Python: 3.13.7
+"""
+
+
 def measure_insert_start_list(n: int) -> float:
     """Измерение времени вставки n элементов в начало списка (list).
     Каждая операция insert(0, x) имеет сложность O(n).
@@ -81,3 +90,4 @@ def run_experiments():
 
 if __name__ == "__main__":
     run_experiments()
+    print(pc_info)
