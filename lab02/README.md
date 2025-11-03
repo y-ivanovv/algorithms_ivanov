@@ -203,7 +203,7 @@ def is_palindrome(s: str) -> bool:
 График показывает, что вставка в начало списка (`list.insert(0, x)`) линейно увеличивает время при росте N,  
 в то время как `LinkedList.insert_at_start` выполняется стабильно за O(1).
 
-📍 *Файл:* `results/insert_comparison.png`
+![list vs LinkedList](results/insert_comparison.png)
 
 ---
 
@@ -211,7 +211,7 @@ def is_palindrome(s: str) -> bool:
 Удаление первого элемента у `list` требует сдвига всех элементов (O(n)),  
 а `deque.popleft()` работает мгновенно — O(1).
 
-📍 *Файл:* `results/queue_comparison.png`
+![list.pop(0) vs deque.popleft()](results/queue_comparison.png)
 
 ---
 
