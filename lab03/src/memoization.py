@@ -4,8 +4,18 @@ import matplotlib.pyplot as plt
 from recursion import fibonacci
 
 
-def fibonacci_memo(n: int, cache: dict=None) -> int:
-    """Рекурсивное вычисление числа Фибоначчи с мемоизацией.
+pc_info = """
+Характеристики ПК для тестирования:
+- Процессор: 4 ядра
+- Оперативная память: 16 ГБ
+- ОС: Linux Mint
+- Python: 3.13.7
+"""
+
+
+def fibonacci_memo(n: int, cache: dict = None) -> int:
+    """
+    Рекурсивное вычисление числа Фибоначчи с мемоизацией.
     Временная сложность: O(n)
     Глубина рекурсии: O(n)
     """
@@ -37,7 +47,8 @@ def timer(func, arr: list) -> list:
 
 
 if __name__ == "__main__":
-    print("Сравнение производительности рекурсии и мемоизации:")
+    print(pc_info)
+    print("\nСравнение производительности рекурсии и мемоизации:")
 
     arr = [5, 10, 15, 20, 25, 30, 35]
     print("\nВычисляем времена выполнения (в миллисекундах):\n")
