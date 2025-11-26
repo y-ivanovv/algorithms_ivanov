@@ -17,7 +17,7 @@ class TreeNode:
         return self.__str__()
 
 
-class BinaryTree:
+class BinarySearchTree:
     """Бинарное дерево поиска"""
 
     def __init__(self):
