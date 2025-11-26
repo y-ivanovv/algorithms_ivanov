@@ -11,7 +11,8 @@ class TreeNode:
         self.parent = None
 
     def __str__(self) -> str:
-        return f"Значение узла: {self.value}, Родитель узла: {self.parent}, Левый потомок: {self.left}, Правый потомок:{self.right}"
+        return (f"Значение узла: {self.value}, Родитель узла: {self.parent}, "
+                f"Левый потомок: {self.left}, Правый потомок:{self.right}")
 
     def __repr__(self) -> str:
         return self.__str__()
