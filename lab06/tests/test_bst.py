@@ -1,6 +1,6 @@
 import pytest
-from binary_search_tree import BinarySearchTree
-from tree_traversal import inorder_recursive, preorder_recursive, postorder_recursive, inorder_iterative
+from lab06.src.binary_search_tree import BinarySearchTree
+from lab06.src.tree_traversal import inorder_recursive, preorder_recursive, postorder_recursive, inorder_iterative
 
 
 @pytest.fixture
