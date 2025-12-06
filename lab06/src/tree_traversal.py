@@ -1,5 +1,5 @@
 from typing import Optional
-from binary_search_tree import TreeNode, BinarySearchTree
+from lab06.src.binary_search_tree import TreeNode, BinarySearchTree
 
 
 def inorder_recursive(node: Optional[TreeNode], result: list[int] = None) -> list[int]:
