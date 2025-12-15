@@ -68,6 +68,7 @@ def huffman_experiment():
     plt.ylabel("Время работы (сек)")
     plt.title("Время работы алгоритма Хаффмана")
     plt.grid()
+    plt.savefig("../results/huffman.png")
     plt.show()
 
 
