@@ -178,7 +178,6 @@ if __name__ == "__main__":
     print("Выбранные интервалы:", selected)
     print()
 
-
     print("=== Жадный 0-1 рюкзак ===")
     items = [
         (60, 10),
@@ -192,7 +191,6 @@ if __name__ == "__main__":
     print("Предметы (ценность, вес):", items)
     print("Жадное решение:", value)
     print()
-
 
     print("=== Кодирование Хаффмана ===")
     frequencies = {
@@ -213,7 +211,6 @@ if __name__ == "__main__":
     print_huffman_tree(root)
     print()
 
-
     print("=== Размен монет ===")
     amount = 87
     coins = [50, 10, 5, 2, 1]
@@ -223,7 +220,6 @@ if __name__ == "__main__":
     print("Монеты:", coins)
     print("Размен:", change)
     print()
-
 
     print("=== Минимальное остовное дерево (Краскал) ===")
     vertices = 4
